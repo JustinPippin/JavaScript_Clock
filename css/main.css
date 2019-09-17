@@ -1,3 +1,12 @@
 body {
     background-color: black;
+    text-align: center;
+}
+
+#clockDisplay {
+    color: white;
+    position: absolute; /* We want to position this element exactly on the screen where we want it */
+    top: 50%; /* Move element down 50% of the height of the parent */
+    left: 50%; /* Move element right 50% of the width of the parent of the parent */
+    font-size: 60 px;
 }
