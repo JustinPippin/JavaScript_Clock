@@ -1,6 +1,7 @@
 body {
     background-color: black;
-    text-align: center;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #clockDisplay {
@@ -9,16 +10,43 @@ body {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    font-size: 80px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 70px;
+    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center
+}
+
+.headerContainer {
+    background-color: darkorchid;
+    
+}
+
+.headerContainer a {
+    /* Remember that this targets anchior elements inside any ekement using the headerContainer class */
+    padding: 16px 18px;
+    display: inline-block;
+    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.headerContainer a:hover {
+/* Change the styling for the anchor elements inside the headerContainer class when we mouse over them */
+background-color: purple;
 }
 
 #dateDisplay {
+    text-align: center;
     color: white;
     position: absolute; /* We want to position this element exactly on the screen where we want it */
     top: 70%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     font-size: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.pageTitle {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 90px;
 }
